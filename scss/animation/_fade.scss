@@ -1,0 +1,83 @@
+
+/* --------------------------------
+
+    フェードアニメーション各種
+    ・fadeUpAnime：   上から下へ
+    ・fadeDownAnime： 下から上へ
+    ・fadeLeftAnime： 左から右へ
+    ・fadeRightAnime：右から左へ
+
+-------------------------------- */
+@keyframes fadeAnime {
+    from {
+        opacity: 0;
+        scale: 0.8;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes fadeUpAnime{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeDownAnime{
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeLeftAnime{
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeRightAnime{
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.a{
+    &-fade{
+        animation: fadeAnime linear;
+        animation-duration:0.5s;
+    }
+    &-fadeUp{
+        animation-name:fadeUpAnime;
+        animation-duration:0.5s;
+    }
+    &-fadeDown{
+        animation-name:fadeDownAnime;
+        animation-duration:0.5s;
+    }
+    &-fadeRight{
+        animation-name:fadeRightAnime;
+        animation-duration:0.5s;
+    }
+    &-fadeLeft{
+        animation-name:fadeLeftAnime;
+        animation-duration:0.5s;
+    }
+}

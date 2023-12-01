@@ -31,11 +31,13 @@
 
 // 導入
 @import "./introduction/accordion";
-@import "./introduction/aos";
 @import "./introduction/menu";
 @import "./introduction/pageTop";
 @import "./introduction/swiper";
 
 // アニメーション
+@import "./animation/scroll";
+@import "./animation/flip";
+@import "./animation/color";
+@import "./animation/zoom";
 @import "./animation/fade";
-@import "./animation/slide";
