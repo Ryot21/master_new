@@ -1,1 +1,233 @@
-// フレックス
+// フレックス// フレックス
+.c-flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@include min(768){
+		flex-wrap: nowrap;
+	}
+	li{
+		width: 100%;
+		@include min(768){
+			width: 48%;
+		}
+	}
+	// 反転
+	&.-reverse{
+		@include min(768){
+			flex-direction: row-reverse;
+		}
+	}
+	&.-s-reverse{
+		@include max(768){
+			flex-direction: row-reverse;
+		}
+	}
+	&.-spa-b{
+		@include min(768){
+			justify-content: space-between !important;
+		}
+	}
+	&.-p01{
+		justify-content: space-between;
+		li{
+			width: 100%;
+			@include min(768){
+				&:nth-child(1){
+					width: 45%;
+					padding-right: 5%;
+				}
+				&:nth-child(2){
+					width: 55%;
+				}
+			}
+		}
+		&.-reverse{
+			li{
+				@include min(768){
+					&:nth-child(1){
+						padding-left: 5%;
+						padding-right: 0;
+					}
+				}
+			}
+		}
+	}
+	&.-p02{
+		justify-content: space-between;
+		li{
+			@include max(768){
+				width: 100%;
+				&:nth-child(2){
+					position: relative;
+					width: 80%;
+					margin-right: 0;
+					margin-left: auto;
+				}
+			}
+			@include min(768){
+				width: 60%;
+				&:nth-child(2){
+					width: 40%;
+				}
+			}
+		}
+	}
+	&.-p03{
+		justify-content: space-between;
+		li{
+			@include max(768){
+				width: 100%;
+			}
+			@include min(768){
+				width: 40%;
+				&:nth-child(2){
+					width: 60%;
+				}
+			}
+		}
+	}
+	&.-f-icon{
+		li{
+			width: calc(33.3333% - 10px);
+			margin: 0 5px;
+		}
+	}
+
+	&.-column2{
+		flex-wrap: wrap !important;
+		justify-content: start;
+		li{
+			position: relative;
+			@include max(768){
+				width: 100%;
+			}
+			@include min(768){
+				width: calc(50% - 5px);
+				&:nth-child(odd){
+					margin-right: 5px;
+				}
+				&:nth-child(even){
+					margin-left: 5px;
+
+				}
+			}
+		}
+		&_1{
+			flex-wrap: wrap !important;
+			justify-content: start;
+			li{
+				position: relative;
+				@include max(768){
+					width: 100%;
+				}
+				@include min(768){
+					width: calc(50% - 10px);
+					&:nth-child(odd){
+						margin-right: 10px;
+					}
+					&:nth-child(even){
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+		&_2{
+			flex-wrap: nowrap !important;
+			justify-content: start;
+			li{
+				position: relative;
+				@include max(768){
+					&:nth-child(odd){
+						width: calc(55% - 5px) !important;
+						margin-right: 5px;
+					}
+					&:nth-child(even){
+						width: calc(45% - 5px) !important;
+						margin-right: 5px;
+					}
+				}
+				@include min(768){
+					&:nth-child(odd){
+						width: calc(55% - 5px) !important;
+						margin-right: 5px;
+					}
+					&:nth-child(even){
+						width: calc(45% - 5px) !important;
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+		&_r-pic{
+			justify-content: space-between;
+			li{
+				width: 100%;
+				@include min(768){
+					&:nth-child(1){
+						width: 43%;
+						padding-right: 4%;
+					}
+					&:nth-child(2){
+						width: 57%;
+					}
+				}
+			}
+		}
+	}
+
+	&.-column4{
+		flex-wrap: wrap !important;
+		justify-content: start;
+		li{
+			position: relative;
+			@include max(768){
+				width: calc(50% - 5px);
+				&:nth-child(odd){
+					margin-right: 5px;
+				}
+				&:nth-child(even){
+					margin-left: 5px;
+
+				}
+			}
+			@include min(768){
+				width: calc(33.3333% - 20px);
+				margin: 10px;
+			}
+			@include min(1200){
+				width: calc(25% - 20px);
+				margin: 10px;
+			}
+
+			.caution-text{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				color: $main-color--Dgray;
+			}
+		}
+		&_contactBox{
+			flex-wrap: wrap !important;
+			justify-content: start;
+			li{
+				width: 50%;
+				@include min(768){
+					width: 25%;
+				}
+				&:nth-child(1){
+					background: $contact-item-1;
+				}
+				&:nth-child(2){
+					background: $contact-item-2;
+				}
+				&:nth-child(3){
+					background: $contact-item-3;
+				}
+				&:nth-child(4){
+					background: $contact-item-4;
+				}
+			}
+		}
+	}
+}
