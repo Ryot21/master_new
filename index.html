@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPページ</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" href="images/apple-touch-icon.png">
+    <!-- デプロイ前に確認・サンプル -->
+    <meta name="keywords" content="○○市,西武池袋線,西武新宿線,○○駅,○○支店,住協">
+    <meta name="description" content="
+        ここにはサイトデザインのf-view下部にあるコンテンツから
+        いい感じのテキストを使用する。多くても100文字以内にすること。
+    ">
+    <link rel="canonical" href="https://www.jyu-g.co.jp/special/master_new/">
+    <!--// デプロイ前に確認・サンプル -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/micromodal.min.js"></script><!-- モーダル -->
+    <script src="js/menu.js"></script>
+    <script src="js/pagetop.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Fonts -->
+    <script>
+        (function(d) {
+          var config = {
+
+            kitId: 'lrn3nhs',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics --> 
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48905020-1"></script> 
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-48905020-1');
+    </script>
+    <script type="text/javascript">
+        if(location.protocol == 'http:') {
+            location.replace(location.href.replace(/http:/, 'https:'));
+        }
+    </script> -->
+</head>
+<body class="top js_humburgerClose">
+
+    <!-- ハンバーガーメニュー -->
+    <nav id="js-scroll-top" class="c-hnav scroll-top">
+		<input id="c-hnav__checkbox" class="c-hnav__cheakbox" type="checkbox"/>
+		<label class="c-hnav__button" for="c-hnav__checkbox">
+            <span></span>
+            <p class="s-SS">MENU</p>
+        </label>
+		<label id="" class="c-hnav__cheakbox c-hnav__close" for="c-hnav__checkbox"></label>
+		<!--ハンバーガーメニュー内のコンテンツ-->
+		<div class="c-hnav__content">
+			<ul class="">
+				<li><a class="s-L" href="#content01">コンテンツ01</a></li>
+				<li><a class="s-L" href="#content02">コンセプト02</a></li>
+				<li><a class="s-L" href="#content03">コンテンツ03</a></li>
+				<li><a class="s-L" href="#content04">コンテンツ04</a></li>
+				<li><a class="s-L" href="#content05">コンテンツ05</a></li>
+                <li><a class="s-L" href="#content06">コンテンツ06</a></li>
+                <div class="c-hnav__contactArea">
+                    <a href="" class="c-hnav__top navItem lh-1">
+                        <span class="navItem_main s-L">資料請求</span>
+                        <br>
+                        <span class="navItem_sub02 s-SS">REQUEST</span>
+                    </a>
+                    <a href="" class="c-hnav__bottom navItem lh-1">
+                        <span class="navItem_main s-L">見学予約</span>
+                        <br>
+                        <span class="navItem_sub02 s-SS">RESERV</span>
+                    </a>
+                    <!-- <p class="tag s-M">物件名物件名物件名</p> -->
+                </div>
+			</ul>
+		</div>
+	</nav>
+    <!-- コンテンツ -->
+    <main class="c-container">
+        <!-- f-view -->
+        <div class="c-contents -f-view">
+            
+        </div>
+    </main>
+    <!-- //コンテンツ -->
+
+    <!-- footer -->
+    <footer id="footer" class="c-footer">
+        <div class="c-footer-wrapper mgb1 mgb10s">
+            <div class="c-footer__contactArea">
+                <ul class="c-footer__contactLists">
+                    <li class="contactItem">
+                        <a href="index.html" class="lh-1">
+                            <span class="contactItem_main s-M">資料請求</span>
+                            <br>
+                            <span class="contactItem_sub s-SS">REQUEST</span>
+                        </a>
+                    </li>
+                    <li class="contactItem">
+                        <a href="concept.html" class="lh-1">
+                            <span class="contactItem_main s-M">見学予約</span>
+                            <br>
+                            <span class="contactItem_sub s-SS">RESERV</span>
+                        </a>
+                    </li>
+                    <li class="pc contactItem">
+                        <a href="layout.html" class="lh-1">
+                            <span class="contactItem_main s-M">お問い合わせ</span>
+                            <br>
+                            <span class="contactItem_sub s-SS">INQUIRY</span>
+                        </a>
+                    </li>
+                    <li class="pc contactItem">
+                        <a href="plan.html" class="lh-1">
+                            <span class="contactItem_main s-M">住まい情報トップ</span>
+                            <br>
+                            <span class="contactItem_sub s-SS">HOME</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="c-footer-wrapper -v02 mgb2 mgb10s">
+            <nav class="c-footer__navArea">
+                <ul class="c-footer__navLists">
+                    <li class="navItem_footer mgb2">
+                        <a href="index.html" class="lh-1">
+                            <span class="navItem_main s-SS">トップ</span>
+                        </a>
+                    </li>
+                    <li class="navItem_footer mgb2">
+                        <a href="concept.html" class="lh-1">
+                            <span class="navItem_main s-SS">コンセプト</span>
+                        </a>
+                    </li>
+                    <li class="navItem_footer mgb2">
+                        <a href="layout.html" class="lh-1">
+                            <span class="navItem_main s-SS">区画・間取</span>
+                        </a>
+                    </li>
+                    <li class="navItem_footer mgb2">
+                        <a href="plan.html" class="lh-1">
+                            <span class="navItem_main s-SS">プラン</span>
+                        </a>
+                    </li>
+                    <li class="navItem_footer mgb2">
+                        <a href="equipment.html" class="lh-1">
+                            <span class="navItem_main s-SS">設備・仕様</span>
+                        </a>
+                    </li>
+                    <li class="navItem_footer mgb2">
+                        <a href="location.html" class="lh-1">
+                            <span class="navItem_main s-SS">周辺環境</span>
+                        </a>
+                    </li>
+                    <li class="navItem_footer mgb2">
+                        <a href="quality.html" class="lh-1">
+                            <span class="navItem_main s-SS">住協の家づくり</span>
+                        </a>
+                    </li>
+                    <li class="navItem_footer mgb2">
+                        <a href="/" class="lh-1">
+                            <span class="navItem_main s-SS">物件概要</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="c-footer__btnArea mgb2 mgb10s">
+            <a href="">
+                <span class="s-M">物件概要はこちら</span>
+            </a>
+        </div>
+        <div class="c-footer__shopArea">
+            <ul class="c-footer__shopFlex">
+                <li><a href=""><img src="images/logo/SVG/hannou-shop.svg" alt="支店情報"></a></li>
+                <li><a href=""><img src="images/logo/SVG/hannou-tel.svg" alt="支店電話番号"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- 固定アイテム -->
+    <div class="c-btn-fixed">
+        <ul class="c-btn-lists">
+            <li><a href="">資料請求</a></li>
+            <li><a href="">見学予約</a></li>
+        </ul>
+    </div>
+    <!-- //固定アイテム -->
+
+</body>
+</html>
