@@ -89,8 +89,22 @@ h1, h2, h3, h4, h5, h6, p, a, span {
   color: #333333;
   font-family: shippori-mincho, sans-serif;
   font-weight: normal;
+  font-style: normal;
   text-align: center;
   line-height: 1.3;
+}
+h1.b-text, h2.b-text, h3.b-text, h4.b-text, h5.b-text, h6.b-text, p.b-text, a.b-text, span.b-text {
+  display: inline;
+  text-decoration: underline;
+}
+h1.-right, h2.-right, h3.-right, h4.-right, h5.-right, h6.-right, p.-right, a.-right, span.-right {
+  text-align: right;
+}
+h1.-left, h2.-left, h3.-left, h4.-left, h5.-left, h6.-left, p.-left, a.-left, span.-left {
+  text-align: left;
+}
+h1.-center, h2.-center, h3.-center, h4.-center, h5.-center, h6.-center, p.-center, a.-center, span.-center {
+  text-align: center;
 }
 h1.lh-1, h2.lh-1, h3.lh-1, h4.lh-1, h5.lh-1, h6.lh-1, p.lh-1, a.lh-1, span.lh-1 {
   line-height: 1;
@@ -98,29 +112,51 @@ h1.lh-1, h2.lh-1, h3.lh-1, h4.lh-1, h5.lh-1, h6.lh-1, p.lh-1, a.lh-1, span.lh-1 
 h1.lh-1_5, h2.lh-1_5, h3.lh-1_5, h4.lh-1_5, h5.lh-1_5, h6.lh-1_5, p.lh-1_5, a.lh-1_5, span.lh-1_5 {
   line-height: 1.5;
 }
+h1.-b, h2.-b, h3.-b, h4.-b, h5.-b, h6.-b, p.-b, a.-b, span.-b {
+  font-weight: bold;
+}
+h1.-f-gothic, h2.-f-gothic, h3.-f-gothic, h4.-f-gothic, h5.-f-gothic, h6.-f-gothic, p.-f-gothic, a.-f-gothic, span.-f-gothic {
+  font-family: source-han-sans-japanese, sans-serif;
+}
+h1.-f-Garamond, h2.-f-Garamond, h3.-f-Garamond, h4.-f-Garamond, h5.-f-Garamond, h6.-f-Garamond, p.-f-Garamond, a.-f-Garamond, span.-f-Garamond {
+  font-family: garamond-premier-pro, serif;
+  font-style: italic;
+}
+h1.-f-acumin, h2.-f-acumin, h3.-f-acumin, h4.-f-acumin, h5.-f-acumin, h6.-f-acumin, p.-f-acumin, a.-f-acumin, span.-f-acumin {
+  font-family: acumin-pro, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+h1.-site-c01, h2.-site-c01, h3.-site-c01, h4.-site-c01, h5.-site-c01, h6.-site-c01, p.-site-c01, a.-site-c01, span.-site-c01 {
+  color: #b6b343;
+}
+h1.-site-c02, h2.-site-c02, h3.-site-c02, h4.-site-c02, h5.-site-c02, h6.-site-c02, p.-site-c02, a.-site-c02, span.-site-c02 {
+  color: #6d5847;
+}
+h1.-site-c03, h2.-site-c03, h3.-site-c03, h4.-site-c03, h5.-site-c03, h6.-site-c03, p.-site-c03, a.-site-c03, span.-site-c03 {
+  color: #599465;
+}
+h1.-site-c04, h2.-site-c04, h3.-site-c04, h4.-site-c04, h5.-site-c04, h6.-site-c04, p.-site-c04, a.-site-c04, span.-site-c04 {
+  color: #00c5d5;
+}
 
 p.s-SS, a.s-SS, span.s-SS {
   font-size: 10px;
-}
-@media (width >= 768px) {
-  p.s-SS, a.s-SS, span.s-SS {
-    font-size: 12px;
-  }
 }
 p.s-S, a.s-S, span.s-S {
   font-size: 12px;
 }
 @media (width >= 768px) {
   p.s-S, a.s-S, span.s-S {
-    font-size: clamp(12px, 1vw, 14px);
+    font-size: clamp(12px, 1.5vw, 16px);
   }
 }
 p.s-M, a.s-M, span.s-M {
-  font-size: 12px;
+  font-size: 14px;
 }
 @media (width >= 768px) {
   p.s-M, a.s-M, span.s-M {
-    font-size: clamp(12px, 1.2vw, 16px);
+    font-size: clamp(12px, 1.2vw, 18px);
   }
 }
 p.s-L, a.s-L, span.s-L {
@@ -128,7 +164,12 @@ p.s-L, a.s-L, span.s-L {
 }
 @media (width >= 768px) {
   p.s-L, a.s-L, span.s-L {
-    font-size: clamp(10px, 1.8vw, 24px);
+    font-size: clamp(16px, 1.8vw, 24px);
+  }
+}
+@media (768px >= width) {
+  p.s-L.-s14, a.s-L.-s14, span.s-L.-s14 {
+    font-size: 14px;
   }
 }
 p.s-LL, a.s-LL, span.s-LL {
@@ -136,9 +177,239 @@ p.s-LL, a.s-LL, span.s-LL {
 }
 @media (width >= 768px) {
   p.s-LL, a.s-LL, span.s-LL {
-    font-size: clamp(10px, 2.5vw, 28px);
+    font-size: clamp(18px, 3vw, 34px);
   }
 }
+
+p.Top, p.concept, p.plan, p.Grallery, p.Location, p.Information, span.Top, span.concept, span.plan, span.Grallery, span.Location, span.Information, a.Top, a.concept, a.plan, a.Grallery, a.Location, a.Information {
+  position: relative;
+}
+p.Top::before, p.concept::before, p.plan::before, p.Grallery::before, p.Location::before, p.Information::before, span.Top::before, span.concept::before, span.plan::before, span.Grallery::before, span.Location::before, span.Information::before, a.Top::before, a.concept::before, a.plan::before, a.Grallery::before, a.Location::before, a.Information::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+}
+p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, p.Information::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, span.Information::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after, a.Information::after {
+  position: absolute;
+  bottom: 11%;
+  font-size: 10px;
+  font-family: shippori-mincho, sans-serif;
+  font-style: normal;
+}
+@media (width >= 768px) {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, p.Information::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, span.Information::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after, a.Information::after {
+    font-size: 14px;
+    bottom: 0%;
+  }
+}
+@media (width >= 1000px) {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, p.Information::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, span.Information::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after, a.Information::after {
+    bottom: 11%;
+  }
+}
+p.Top::before, p.concept::before, p.plan::before, p.Grallery::before, p.Location::before, span.Top::before, span.concept::before, span.plan::before, span.Grallery::before, span.Location::before, a.Top::before, a.concept::before, a.plan::before, a.Grallery::before, a.Location::before {
+  left: 0;
+}
+@media (400px >= width) {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
+    bottom: -60%;
+  }
+}
+@media (768px >= width) {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
+    left: 0%;
+  }
+}
+@media (width >= 768px) {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
+    left: 30%;
+  }
+}
+@media (width >= 1000px) {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
+    left: 30%;
+  }
+}
+@media (width >= 1400px) {
+  p.Top::after, p.concept::after, p.plan::after, p.Grallery::after, p.Location::after, span.Top::after, span.concept::after, span.plan::after, span.Grallery::after, span.Location::after, a.Top::after, a.concept::after, a.plan::after, a.Grallery::after, a.Location::after {
+    left: 42%;
+  }
+}
+@media (400px >= width) {
+  p.Information::after, span.Information::after, a.Information::after {
+    bottom: -60%;
+  }
+}
+@media (768px >= width) {
+  p.Information::after, span.Information::after, a.Information::after {
+    left: 0%;
+  }
+}
+@media (width >= 768px) {
+  p.Information::after, span.Information::after, a.Information::after {
+    left: 41%;
+  }
+}
+@media (width >= 1000px) {
+  p.Information::after, span.Information::after, a.Information::after {
+    left: 41%;
+  }
+}
+@media (width >= 1400px) {
+  p.Information::after, span.Information::after, a.Information::after {
+    left: 50%;
+  }
+}
+@media (width >= 768px) {
+  p.Top::before, span.Top::before, a.Top::before {
+    background: #333333;
+    width: 50%;
+  }
+}
+@media (width >= 1000px) {
+  p.Top::before, span.Top::before, a.Top::before {
+    width: 45%;
+  }
+}
+@media (width >= 1400px) {
+  p.Top::before, span.Top::before, a.Top::before {
+    width: 57%;
+  }
+}
+@media (width >= 1600px) {
+  p.Top::before, span.Top::before, a.Top::before {
+    width: 58%;
+  }
+}
+p.Top::after, span.Top::after, a.Top::after {
+  content: "トップ";
+}
+@media (width >= 768px) {
+  p.concept::before, span.concept::before, a.concept::before {
+    background: #b6b343;
+    width: 60%;
+  }
+}
+@media (width >= 1000px) {
+  p.concept::before, span.concept::before, a.concept::before {
+    width: 54%;
+  }
+}
+@media (width >= 1400px) {
+  p.concept::before, span.concept::before, a.concept::before {
+    width: 66%;
+  }
+}
+@media (width >= 1600px) {
+  p.concept::before, span.concept::before, a.concept::before {
+    width: 67%;
+  }
+}
+p.concept::after, span.concept::after, a.concept::after {
+  content: "コンセプト";
+}
+@media (width >= 768px) {
+  p.plan::before, span.plan::before, a.plan::before {
+    left: 0;
+    background: #6d5847;
+    width: 50%;
+  }
+}
+@media (width >= 1000px) {
+  p.plan::before, span.plan::before, a.plan::before {
+    width: 45%;
+  }
+}
+@media (width >= 1400px) {
+  p.plan::before, span.plan::before, a.plan::before {
+    width: 57%;
+  }
+}
+@media (width >= 1600px) {
+  p.plan::before, span.plan::before, a.plan::before {
+    width: 58%;
+  }
+}
+p.plan::after, span.plan::after, a.plan::after {
+  content: "プラン";
+}
+@media (width >= 768px) {
+  p.Grallery::before, span.Grallery::before, a.Grallery::before {
+    left: 0;
+    background: #599465;
+    width: 61%;
+  }
+}
+@media (width >= 1000px) {
+  p.Grallery::before, span.Grallery::before, a.Grallery::before {
+    width: 54%;
+  }
+}
+@media (width >= 1400px) {
+  p.Grallery::before, span.Grallery::before, a.Grallery::before {
+    width: 66%;
+  }
+}
+@media (width >= 1600px) {
+  p.Grallery::before, span.Grallery::before, a.Grallery::before {
+    width: 67%;
+  }
+}
+p.Grallery::after, span.Grallery::after, a.Grallery::after {
+  content: "ギャラリー";
+}
+@media (width >= 768px) {
+  p.Location::before, span.Location::before, a.Location::before {
+    left: 0;
+    background: #00c5d5;
+    width: 66%;
+  }
+}
+@media (width >= 1000px) {
+  p.Location::before, span.Location::before, a.Location::before {
+    width: 58%;
+  }
+}
+@media (width >= 1400px) {
+  p.Location::before, span.Location::before, a.Location::before {
+    width: 72%;
+  }
+}
+@media (width >= 1600px) {
+  p.Location::before, span.Location::before, a.Location::before {
+    width: 73%;
+  }
+}
+p.Location::after, span.Location::after, a.Location::after {
+  content: "ロケーション";
+}
+@media (width >= 768px) {
+  p.Information::before, span.Information::before, a.Information::before {
+    left: 0;
+    background: #333333;
+    width: 96%;
+  }
+}
+@media (width >= 1000px) {
+  p.Information::before, span.Information::before, a.Information::before {
+    width: 83%;
+  }
+}
+@media (width >= 1400px) {
+  p.Information::before, span.Information::before, a.Information::before {
+    width: 94%;
+  }
+}
+@media (width >= 1600px) {
+  p.Information::before, span.Information::before, a.Information::before {
+    width: 95%;
+  }
+}
+p.Information::after, span.Information::after, a.Information::after {
+  content: "インフォメーション";
+}
+
 /* ------------------------------------------------------------------------
 　　　margin 下幅
 		*基本縦方向の幅は、下方側で調整すること。
@@ -3275,7 +3546,7 @@ header {
   }
 }
 .swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
-  background: #9b2c2c;
+  background: #b6b343;
 }
 .swiperArea .swiper-container .swiper-pagination .swiper-pagination-bullet {
   transition: 0.5s all;
