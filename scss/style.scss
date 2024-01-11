@@ -19,6 +19,8 @@
 @import "./components/tab";     // タブ
 @import "./components/modal";   // モーダル
 @import "./components/btn";     // ボタン
+@import "./components/link";    // リンク系
+@import "./components/popup";   // ポップアップ
 
 // 各ページ
 @import "./page/top";
@@ -28,6 +30,8 @@
 @import "./page/location";
 @import "./page/quality";       // 基本使わない。
 @import "./page/overview";      // 基本使わない。
+
+@import "./page/equipment";     // LP用
 
 // 導入
 @import "./introduction/accordion";
